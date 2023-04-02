@@ -19,13 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnPlus = findViewById(R.id.btnPlus);
-        btnMinus = findViewById(R.id.btnMinus);
-        btnOn = findViewById(R.id.btnOn);
-        btnOff  = findViewById(R.id.btnOff);
-        btnMode = findViewById(R.id.btnMode);
-        tVTemp = findViewById(R.id.tVTemp);
-        tVMode = findViewById(R.id.tVMode);
+        initviews();
 
         activeAC = false;
         modeCool = true;
@@ -115,6 +109,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    private void initviews() {
+        btnPlus = findViewById(R.id.btnPlus);
+        btnMinus = findViewById(R.id.btnMinus);
+        btnOn = findViewById(R.id.btnOn);
+        btnOff  = findViewById(R.id.btnOff);
+        btnMode = findViewById(R.id.btnMode);
+        tVTemp = findViewById(R.id.tVTemp);
+        tVMode = findViewById(R.id.tVMode);
 
     }
 }
